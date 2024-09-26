@@ -74,6 +74,11 @@
         #about {
             .container {
                 flex-direction: column;
+                width: 100%;
+                .description {
+                    padding: 0em;
+                    padding-bottom: 4em;
+                }
             }
         }
     }

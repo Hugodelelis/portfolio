@@ -96,6 +96,8 @@
         #mobile-menu {
             display: flex;
             flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
             padding: 1em;
             background-color: var(--black-010);
             position: fixed;
@@ -110,8 +112,9 @@
             nav {
                 display: flex;
                 justify-content: right;
-                margin: 0 0.5em 0.5em; 
+                padding-bottom: 1em;
                 border-bottom: 1px solid var(--white-010);
+                max-width: 100%;
 
                 ul {
                     padding-top: 0.8em;
@@ -172,20 +175,6 @@
                         }
                     }
                 }
-            }
-
-            h1 {
-                flex: 1;
-                justify-self: left !important;
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-                background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
-                var(--color-core-5) 80%, var(--color-core-1) 100%);
-                background-size: 180%;
-                animation: animate 15s ease infinite;
-                position: relative;
-                padding-bottom: 0.1em;
             }
 
             #menu-list {

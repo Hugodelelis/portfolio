@@ -1,24 +1,25 @@
 :host {
     #about {
         min-height: 50vh;
-        background-color: var(--black-010);
+        background: linear-gradient(135deg, black 25%, white 25%);
         display: flex;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
-        color: var(--white-010);
-        padding: 0 1em; 
+        color: var(--black-010);
+        padding: 1em; 
         
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80em;
+            width: 60em;
 
             .description {  
                 padding-left: 2em;
+
                 h1, h2 {
                     padding-bottom: 0.2em;
-                    font-weight: 200;
+                    font-weight: 400;
                     color: transparent;
                     -webkit-background-clip: text;
                     background-clip: text;
@@ -44,10 +45,6 @@
                 }
             }
 
-            img {
-                max-width: 15em;
-            }
-
             .stacks {
                 display: flex;
                 flex-wrap: wrap;
@@ -70,17 +67,50 @@
         }
     }
 
-    @media(max-width: 920px) {
+    @media(max-width: 1400px) {
         #about {
+            background: linear-gradient(135deg, black 20%, white 20%);
+            padding-top: 3em;
             .container {
                 flex-direction: column;
-                width: 100%;
-                .description {
-                    padding: 0em;
-                }
+                width: 55em;
             }
         }
     }
+
+    @media(max-width: 1200px) {
+        #about {
+            background: linear-gradient(135deg, black 20%, white 20%);
+            padding-top: 3em;
+            .container {
+                flex-direction: column;
+                width: 45em;
+            }
+        }
+    }
+    
+    @media(max-width: 992px) {
+        #about {
+            background: linear-gradient(135deg, black 20%, white 20%);
+            padding-top: 7em;
+            .container {
+                flex-direction: column;
+                width: 35em;
+            }
+        }
+    }
+
+    @media(max-width: 730px) {
+        #about {
+            background: linear-gradient(135deg, black 10%, white 10%);
+            padding-top: 7em;
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+
 
     @keyframes animate {
         0% {

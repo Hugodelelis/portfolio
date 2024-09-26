@@ -24,6 +24,7 @@
             background-size: 180%;
             animation: animate 15s ease infinite;
             position: relative;
+            font-weight: 100;
         }
 
         ul {
@@ -36,7 +37,7 @@
             li a {
                 color: var(--white-010);
                 font-size: 1.2em;
-                font-weight: 400;
+                font-weight: 200;
                 position: relative;
 
                 &::after {

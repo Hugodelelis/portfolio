@@ -11,5 +11,11 @@ export class NavComponent {
   button = document.querySelector('#menu-list')
   IsActive: boolean = false
 
-  
+  menu() {
+    if(!this.IsActive) {
+      this.IsActive = true
+    } else {
+      this.IsActive = false
+    }
+  }
 }

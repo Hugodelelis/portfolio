@@ -68,6 +68,18 @@
                 }
             }
         }
+
+        .cv {
+            padding: 1em;
+            border-radius: 1em;
+            background-color: var(--color-core-2);
+            color: var(--white-010);
+            transition: 0.4s all ease;
+
+            &:hover {
+                background-color: var(--color-core-1);
+            }
+        }
     }
 
     @media(max-width: 920px) {

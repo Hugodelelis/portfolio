@@ -1,0 +1,225 @@
+:host {
+    #mobile-menu, #nav-menu {
+        display: none;
+    }
+
+    #desktop-menu {
+        min-width: 100%;
+        padding: 2em 3em;
+        background-color: var(--black-060);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        min-width: 100%;
+        z-index: 10;
+
+        h1 {
+            flex: 0.5;
+            justify-self: left !important;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+            var(--color-core-5) 80%, var(--color-core-1) 100%);
+            background-size: 180%;
+            animation: animate 15s ease infinite;
+            position: relative;
+        }
+
+        ul {
+            padding-top: 0.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+
+            li a {
+                color: var(--white-010);
+                font-size: 1.2em;
+                font-weight: 400;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 30px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+                    var(--color-core-5) 80%, var(--color-core-1) 100%);
+                    background-size: 180%;
+                    transition: 0.4s all ease;
+
+                    &:hover::after {
+                        content: ']';
+                        position: absolute;
+                        right: -12px;
+                        top: 0;
+                        width: auto; 
+                        font-size: 1em;
+                        color: white;
+                    }
+
+                    &:hover::before {
+                        content: '[';
+                        position: absolute;
+                        left: -12px;
+                        top: 0;
+                        width: auto; 
+                        font-size: 1em;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 992px) {
+        #desktop-menu  {
+            display: none;
+            z-index: 10;
+        }
+
+        #mobile-menu {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            background-color: var(--black-060);
+            position: fixed;
+            min-width: 100%;
+
+            .container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            nav {
+                display: flex;
+                justify-content: right;
+                margin: 0 0.5em 0.5em;  
+
+                ul {
+                    padding-top: 0.8em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: end;
+                    gap: 0.2em;
+        
+                    li a {
+                        color: var(--white-010);
+                        font-size: 1.2em;
+                        font-weight: 400;
+                        position: relative;
+        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 30px;
+                        }
+        
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 30px;
+                        }
+        
+                        &:hover {
+                            color: transparent;
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+                            var(--color-core-5) 80%, var(--color-core-1) 100%);
+                            background-size: 180%;
+                            transition: 0.4s all ease;
+        
+                            &:hover::after {
+                                content: ']';
+                                position: absolute;
+                                right: -12px;
+                                top: 0;
+                                width: auto; 
+                                font-size: 1em;
+                                color: white;
+                            }
+        
+                            &:hover::before {
+                                content: '[';
+                                position: absolute;
+                                left: -12px;
+                                top: 0;
+                                width: auto; 
+                                font-size: 1em;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                flex: 1;
+                justify-self: left !important;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+                var(--color-core-5) 80%, var(--color-core-1) 100%);
+                background-size: 180%;
+                animation: animate 15s ease infinite;
+                position: relative;
+                padding-bottom: 0.1em;
+            }
+
+            #menu-list {
+                background-color: transparent;
+                border: 1px solid var(--white-010);
+                cursor: pointer;
+                transition: 0.4s all ease;
+                
+                &:hover {
+                    border: 1px solid var(--color-core-2);
+                }
+
+                svg {
+                    color: var(--white-010);
+                }
+            }
+        }
+
+        
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
+        25% {
+            background-position: 100% 0;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0 100%;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+}

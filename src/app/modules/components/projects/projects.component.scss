@@ -2,6 +2,7 @@
     #projects {
         min-height: 100vh;
         text-align: center;
+        padding: 0 1em;
 
         h1 {
             color: transparent;
@@ -11,6 +12,8 @@
             var(--color-core-5) 80%, var(--color-core-1) 100%);
             background-size: 180%;
             animation: animate 15s ease infinite;
+            border-bottom: 2px solid var(--color-core-5);
+            padding-bottom: 1em;
         }
     }
 

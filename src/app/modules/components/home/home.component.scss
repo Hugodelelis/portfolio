@@ -1,13 +1,13 @@
 :host {
     #home {
-        min-height: 100vh;
+        min-height: 85vh;
         background-color: var(--black-010);
         display: flex;
         flex-direction: column;
         gap: 2em;
         justify-content: center;
         align-items: center;
-        padding: 0 1em;
+        padding: 0 1em;       
 
         .titles {
             display: flex;
@@ -60,7 +60,7 @@
                 transition: 0.4s all ease;
 
                 &:hover {
-                    background-color: var(--color-core-5);
+                    background-color: var(--color-core-3);
                 }
             }
         }

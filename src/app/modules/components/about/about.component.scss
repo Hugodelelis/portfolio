@@ -1,0 +1,93 @@
+:host {
+    #about {
+        min-height: 50vh;
+        background-color: var(--black-020);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white-010);
+        padding: 0 1em; 
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            width: 80em;
+
+            .description {
+                padding: 2em;
+
+                h1, h2 {
+                    padding-bottom: 0.2em;
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+                    var(--color-core-5) 80%, var(--color-core-1) 100%);
+                    background-size: 180%;
+                    animation: animate 15s ease infinite;
+                    border-bottom: 2px solid var(--color-core-5);
+                }
+
+                h1 {
+                    margin-bottom: 1em;
+                }
+
+                h2 {
+                    margin-top: 1em;
+                }
+            }
+
+            img {
+                max-width: 20em;
+            }
+
+            .stacks {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 1em;
+                margin-top: 1em;
+
+                img {
+                    background-color: var(--white-010);
+                    width: 50px;
+                    height: 50px;
+                    padding: 0.5em;
+                    transition: 0.4s all ease;
+
+                    &:hover {
+                        background-color: var(--color-core-5);
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 920px) {
+        #about {
+            .container {
+                flex-direction: column;
+            }
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
+        25% {
+            background-position: 100% 0;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0 100%;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+}

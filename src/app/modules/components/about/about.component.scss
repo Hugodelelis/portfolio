@@ -1,13 +1,12 @@
 :host {
     #about {
         min-height: 60vh;
-        background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
+        background: lvar(--white-010);
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--black-010);
         padding: 1em; 
-        padding-top: 10em;
         
         .container {
             display: flex;
@@ -16,19 +15,14 @@
             max-width: 80em;    
 
             .description {  
-                padding-top: 2em;
 
                 h2 {
-                    padding-bottom: 0.2em;
+                    font-size: 1.5em;
                     font-weight: 400;
-                    color: transparent;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
-                    var(--color-core-5) 80%, var(--color-core-1) 100%);
-                    background-size: 180%;
-                    animation: animate 15s ease infinite;
+                    text-align: left;
+                    color: var(--black-010);
                     border-bottom: 2px solid var(--color-core-5);
+                    padding: 0.2em;
                 }
 
                 h1 {
@@ -57,9 +51,10 @@
                     width: 40px;
                     height: 40px;
                     padding: 0.5em;
+                    transition: 0.4s all ease;
 
                     &:hover {
-                        background-color: var(--color-core-5);
+                        transform: scale(1.2);
                     }
                 }
             }

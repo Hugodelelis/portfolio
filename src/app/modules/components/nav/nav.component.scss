@@ -6,10 +6,8 @@
     #desktop-menu {
         min-width: 100%;
         padding: 1em 2em;
-        background-color: var(--black-010);
         display: flex;
         align-items: center;
-        position: fixed;
         min-width: 100%;
         z-index: 10;
 
@@ -99,8 +97,6 @@
             justify-content: right;
             align-items: flex-end;
             padding: 1em;
-            background-color: var(--black-010);
-            position: fixed;
             min-width: 100%;
 
             .container {
@@ -113,8 +109,9 @@
                 display: flex;
                 justify-content: right;
                 padding-bottom: 1em;
-                border-bottom: 1px solid var(--white-010);
-                max-width: 100%;
+                width: 100%;
+                position: absolute;
+                top: 60px;
 
                 ul {
                     padding-top: 0.8em;

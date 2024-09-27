@@ -1,7 +1,7 @@
 :host {
     #about {
         min-height: 50vh;
-        background: linear-gradient(135deg, black 25%, white 25%);
+        background: linear-gradient(155deg, var(--black-010) 25%, var(--white-010) 25%);
         display: flex;
         justify-content: right;
         align-items: center;
@@ -12,10 +12,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 60em;
+            width: 55em;    
 
             .description {  
-                padding-left: 2em;
+                padding-top: 2em;
 
                 h1, h2 {
                     padding-bottom: 0.2em;
@@ -53,11 +53,9 @@
                 margin-top: 1em;
 
                 img {
-                    background-color: var(--white-010);
                     width: 40px;
                     height: 40px;
                     padding: 0.5em;
-                    transition: 0.4s all ease;
 
                     &:hover {
                         background-color: var(--color-core-5);
@@ -69,19 +67,18 @@
 
     @media(max-width: 1400px) {
         #about {
-            background: linear-gradient(135deg, black 20%, white 20%);
-            padding-top: 3em;
+            background: linear-gradient(150deg, var(--black-010) 25%, var(--white-010) 25%);
             .container {
                 flex-direction: column;
-                width: 55em;
+                width: 45em;
             }
         }
     }
 
     @media(max-width: 1200px) {
         #about {
-            background: linear-gradient(135deg, black 20%, white 20%);
-            padding-top: 3em;
+            background: linear-gradient(150deg, var(--black-010) 20%, var(--white-010) 20%);
+            padding-top: 5em;
             .container {
                 flex-direction: column;
                 width: 45em;
@@ -91,19 +88,22 @@
     
     @media(max-width: 992px) {
         #about {
-            background: linear-gradient(135deg, black 20%, white 20%);
-            padding-top: 7em;
+            background: linear-gradient(150deg, var(--black-010) 15%, var(--white-010) 15%);
+            padding-top: 5em;
             .container {
                 flex-direction: column;
-                width: 35em;
+                width: 45em;
+                .description {
+                    padding-left: 2em;
+                }
             }
         }
     }
 
     @media(max-width: 730px) {
         #about {
-            background: linear-gradient(135deg, black 10%, white 10%);
-            padding-top: 7em;
+            background: linear-gradient(155deg, var(--black-010) 15%, var(--white-010) 15%);
+            padding-top: 6em;
             .container {
                 flex-direction: column;
                 width: 100%;

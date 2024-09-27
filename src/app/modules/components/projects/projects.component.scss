@@ -1,12 +1,19 @@
 :host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     #projects {
-        min-height: 100vh;
+        min-height: 60vh;
+        width: 80em;
         text-align: center;
         background-color: var(--white-010);
-        padding: 2em 1em 0;
+        padding: 2em 1em;
+        margin: 0 1em 4em;
 
-        h1 {
+        h2, h3 {
             font-weight: 400;
+            text-align: left;
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
@@ -16,12 +23,149 @@
             animation: animate 15s ease infinite;
             border-bottom: 2px solid var(--color-core-5);
             padding-bottom: 0.2em;
+            font-weight: 400;
+            font-size: 32px;
         }
-    }
 
-    @media(max-width: 992px) {
-        #projects {
-            text-align: left;
+        .types {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+            margin-top: 2em;
+            
+            h2 {
+                font-weight: 600;
+                font-size: 1.2em;
+                border: none;
+
+                &:nth-child(1) {
+                    color: var(--color-core-2);
+                }
+
+                
+                &:nth-child(2) {
+                    color: var(--color-core-1);
+                }
+
+                
+                &:nth-child(3) {
+                    color: var(--color-core-4);
+                }
+            }
+        }
+        
+        .content-projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            margin-top: 2em;
+
+            .content {
+                position: relative;
+                height: 15em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.3s ease;
+                transform-origin: center; 
+                
+                &:hover {
+                    transform: scale(0.9);
+                }
+
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                .stacks{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5em;
+                    height: auto;
+                    margin: 2em 0;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+
+                &:nth-child(1), &:nth-child(3), &:nth-child(4), &:nth-child(6) {       
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-2);
+                        clip-path: polygon(0 0, 65% 0, 57% 8%, 8% 8%, 8% 45%, 0 56%);
+                        height: 84px;
+                        width: 84px;
+                        top: 0px;
+                        left: 0px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-2);
+                        clip-path: polygon(100% 100%, 35% 100%, 43% 92%, 92% 92%, 92% 55%, 100% 44%);
+                        height: 62px;
+                        width: 62px;
+                        bottom: 0px;
+                        right: 0px;
+                    }
+                }
+
+                &:nth-child(2) {       
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-1); 
+                        clip-path: polygon(0 0, 65% 0, 57% 8%, 8% 8%, 8% 45%, 0 56%);
+                        height: 84px;
+                        width: 84px;
+                        top: 0px;
+                        left: 0px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-1);
+                        clip-path: polygon(100% 100%, 35% 100%, 43% 92%, 92% 92%, 92% 55%, 100% 44%);
+                        height: 62px;
+                        width: 62px;
+                        bottom: 0px;
+                        right: 0px;
+                    }
+                }
+
+                &:nth-child(5) {       
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-4); 
+                        clip-path: polygon(0 0, 65% 0, 57% 8%, 8% 8%, 8% 45%, 0 56%);
+                        height: 84px;
+                        width: 84px;
+                        top: 0px;
+                        left: 0px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color-core-4);
+                        clip-path: polygon(100% 100%, 35% 100%, 43% 92%, 92% 92%, 92% 55%, 100% 44%);
+                        height: 62px;
+                        width: 62px;
+                        bottom: 0px;
+                        right: 0px;
+                    }
+                }
+            }
         }
     }
 

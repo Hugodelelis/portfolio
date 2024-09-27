@@ -8,29 +8,24 @@
         padding: 1em 2em;
         display: flex;
         align-items: center;
+        justify-content: center;
         min-width: 100%;
         z-index: 10;
+        background-color: var(--black-010);
 
-        h1 {
-            flex: 0.5;
-            justify-self: left !important;
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
-            var(--color-core-5) 80%, var(--color-core-1) 100%);
-            background-size: 180%;
-            animation: animate 15s ease infinite;
-            position: relative;
-            font-weight: 100;
+        img {
+            max-width: 6em;
+            max-height: 6em;
+            display: inline;
+            padding-right: 20px;
         }
 
         ul {
-            padding-top: 0.8em;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 3em;
+            padding-left: 0;
 
             li a {
                 color: var(--white-010);
@@ -93,11 +88,17 @@
 
         #mobile-menu {
             display: flex;
-            flex-direction: column;
             justify-content: right;
-            align-items: flex-end;
+            align-items: center;
+            justify-content: space-between;
             padding: 1em;
             min-width: 100%;
+            background-color: var(--black-010);
+
+            img {
+                max-width: 5em;
+                max-height: 5em;
+            }
 
             .container {
                 display: flex;
@@ -108,7 +109,9 @@
             nav {
                 display: flex;
                 justify-content: right;
+                padding-top: 0.5em;
                 padding-bottom: 1em;
+                padding-right: 2em;
                 width: 100%;
                 position: absolute;
                 top: 60px;

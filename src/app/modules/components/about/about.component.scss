@@ -13,12 +13,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80em;    
+            max-width: 80em;    
 
             .description {  
                 padding-top: 2em;
 
-                h1, h2 {
+                h2 {
                     padding-bottom: 0.2em;
                     font-weight: 400;
                     color: transparent;
@@ -62,34 +62,6 @@
                         background-color: var(--color-core-5);
                     }
                 }
-            }
-        }
-    }
-
-    @media(max-width: 1400px) {
-        #about {
-            background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
-            .container {
-                width: 60em;
-            }
-        }
-    }
-
-    @media(max-width: 1200px) {
-        #about {
-            background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
-            
-            .container {
-                width: 55em;
-            }
-        }
-    }
-    
-    @media(max-width: 992px) {
-        #about {
-            background: linear-gradient(175deg, var(--black-010) 20%, var(--white-010) 20%);
-            .container {
-                width: 100%;
             }
         }
     }

@@ -1,18 +1,19 @@
 :host {
     #about {
-        min-height: 50vh;
-        background: linear-gradient(155deg, var(--black-010) 25%, var(--white-010) 25%);
+        min-height: 60vh;
+        background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         color: var(--black-010);
         padding: 1em; 
+        padding-top: 10em;
         
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 55em;    
+            width: 80em;    
 
             .description {  
                 padding-top: 2em;
@@ -67,50 +68,31 @@
 
     @media(max-width: 1400px) {
         #about {
-            background: linear-gradient(150deg, var(--black-010) 25%, var(--white-010) 25%);
+            background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
             .container {
-                flex-direction: column;
-                width: 45em;
+                width: 60em;
             }
         }
     }
 
     @media(max-width: 1200px) {
         #about {
-            background: linear-gradient(150deg, var(--black-010) 20%, var(--white-010) 20%);
-            padding-top: 5em;
+            background: linear-gradient(175deg, var(--black-010) 25%, var(--white-010) 25%);
+            
             .container {
-                flex-direction: column;
-                width: 45em;
+                width: 55em;
             }
         }
     }
     
     @media(max-width: 992px) {
         #about {
-            background: linear-gradient(150deg, var(--black-010) 15%, var(--white-010) 15%);
-            padding-top: 5em;
+            background: linear-gradient(175deg, var(--black-010) 20%, var(--white-010) 20%);
             .container {
-                flex-direction: column;
-                width: 45em;
-                .description {
-                    padding-left: 2em;
-                }
-            }
-        }
-    }
-
-    @media(max-width: 730px) {
-        #about {
-            background: linear-gradient(155deg, var(--black-010) 15%, var(--white-010) 15%);
-            padding-top: 6em;
-            .container {
-                flex-direction: column;
                 width: 100%;
             }
         }
     }
-
 
     @keyframes animate {
         0% {

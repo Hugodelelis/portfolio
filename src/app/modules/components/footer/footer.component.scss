@@ -8,7 +8,30 @@
 
         span {
             font-weight: 700;
-            color: var(--white-010);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+            var(--color-core-5) 80%, var(--color-core-1) 100%);
+            background-size: 180%;
+            animation: animate 15s ease infinite;
+        }
+    }
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
+        25% {
+            background-position: 100% 0;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0 100%;
+        }
+        100% {
+            background-position: 0 0;
         }
     }
 }

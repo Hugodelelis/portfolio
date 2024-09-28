@@ -62,6 +62,41 @@
                     }
                 }
             }
+
+            .line-time {
+                position: relative;
+
+                .event {
+                    margin-left: 0.5em;
+                    margin-bottom: 1em;
+                    position: relative;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: var(--black-010);
+                        border: 5px solid var(--white-010);
+                        border-radius: 50%;
+                        left: -16px;
+                        bottom: 40%;
+                        width: 20px;
+                        height: 20px;
+                        z-index: 7;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: var(--black-010);
+                    width: 0.3em;
+                    height: 100%;
+                }
+            }
         }
     }
 

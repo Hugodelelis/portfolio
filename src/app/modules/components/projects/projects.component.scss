@@ -6,18 +6,18 @@
     #projects {
         min-height: 60vh;
         width: 80em;
-        text-align: center;
-        background-color: var(--white-010);
-        padding: 0 1em 2em;
-        margin: 0 1em;
+        padding: 0.8em;
 
         h2 {
-            font-size: 1.5em;
-            font-weight: 400;
-            text-align: left;
-            color: var(--black-010);
-            border-bottom: 2px solid var(--color-core-5);
-            padding: 0.2em;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
+            var(--color-core-5) 80%, var(--color-core-1) 100%);
+            background-size: 180%;
+            animation: animate 15s ease infinite;
+            font-weight: 200;
+            text-align: center;
         }
 
         h3 {
@@ -60,6 +60,28 @@
             gap: 1em;
             padding: 0 1em;
             margin-top: 2em;
+
+            .modal {
+                .modal-body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5em;
+                    img {
+                        max-width: 25em;
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        gap: 1em;
+                        justify-content: left;
+                    }
+                }
+            }
 
             .content {
                 position: relative;
@@ -170,6 +192,45 @@
                     }
                 }
             }
+        }
+    }
+
+    @media(max-width: 992px) {
+        #projects {
+            .modal {
+                .modal-body {
+                    flex-direction: column;
+                    justify-content: center !important;
+                    align-items: center !important;
+
+                    p {
+                        text-align: center !important;
+                    }
+
+                    .buttons {
+                        justify-content: center !important;
+                        align-items: center !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
+        25% {
+            background-position: 100% 0;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0 100%;
+        }
+        100% {
+            background-position: 0 0;
         }
     }
 }

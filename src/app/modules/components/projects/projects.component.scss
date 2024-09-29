@@ -62,13 +62,14 @@
             margin-top: 2em;
 
             .modal {
+                padding: 0 1em;
                 .modal-body {
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                     gap: 0.5em;
                     img {
-                        max-width: 25em;
+                        max-width: 20em;
                     }
 
                     p {
@@ -202,6 +203,10 @@
                     flex-direction: column;
                     justify-content: center !important;
                     align-items: center !important;
+
+                    img {
+                        width: 15em;
+                    }
 
                     p {
                         text-align: center !important;

@@ -10,6 +10,15 @@ img {
     }
 }
 
+.my-img {
+    min-width: 10em;
+    object-fit: cover;
+    height: 10em;
+    transform: scale(1) !important;
+    border: 2px solid var(--black-010);
+    animation: changeBorderRadius 10s ease-out infinite;
+}
+
 .img-project {
     width: 20em;
     height: 10em;

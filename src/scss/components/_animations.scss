@@ -1,0 +1,44 @@
+@keyframes changeBorderRadius {
+    0% {
+        border-radius: 60% 80% 60% 90%;
+    }
+    15% {
+        border-radius: 50% 70% 50% 80%; 
+    }
+    30% {
+        border-radius: 20% 40% 70% 90%;
+    }
+    45% {
+        border-radius: 70% 40% 10% 60%;
+    }
+    60% {
+        border-radius: 10% 30% 50% 90%; 
+    }
+    75% {
+        border-radius: 80% 10% 60% 30%;
+    }
+    90% {
+        border-radius: 50% 60% 30% 50%;
+    }
+    100% {
+        border-radius: 60% 80% 60% 90%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

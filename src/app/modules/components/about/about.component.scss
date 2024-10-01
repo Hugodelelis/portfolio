@@ -14,6 +14,13 @@
             justify-content: center;
             align-items: center;
             max-width: 80em;    
+
+            .about {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+            }
             
             .stacks {
                 display: flex;
@@ -64,6 +71,12 @@
                     height: 100%;
                 }
             }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .about {
+            flex-direction: column;
         }
     }
 }

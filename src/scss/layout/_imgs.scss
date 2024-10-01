@@ -1,0 +1,19 @@
+img {
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-010);
+    padding: 0.5em;
+    transition: 0.4s all ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.img-project {
+    width: 20em;
+    height: 10em;
+    padding: 0;
+    background-color: transparent;
+    transform: scale(1) !important;
+}

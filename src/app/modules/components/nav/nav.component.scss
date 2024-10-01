@@ -5,48 +5,60 @@
 
     #desktop-menu {
         min-width: 100%;
-        padding: 1em 2em;
         display: flex;
+        padding: 0.5em 1em;
         align-items: center;
         justify-content: space-between;
         min-width: 100%;
         z-index: 10;
-        background-color: var(--black-010);
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px); 
 
-        img {
-            max-width: 6em;
-            max-height: 6em;
-            display: inline;
-            padding-right: 20px;
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
         }
 
-        ul {
-            display: flex;
-            justify-content: center;
+        nav {
+            display: flex !important;
+            justify-content: right;
             align-items: center;
-            gap: 2em;
-            padding-left: 0;
-
+            width: 100%;
+            top: 10px;
+        
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2em;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        
             li a {
                 color: var(--white-010);
-                font-size: 1.2em;
+                font-size: 1em;
                 font-weight: 200;
                 position: relative;
-
+        
                 &::after {
                     content: '';
                     position: absolute;
                     width: 10px;
                     height: 30px;
                 }
-
+        
                 &::before {
                     content: '';
                     position: absolute;
                     width: 10px;
                     height: 30px;
                 }
-
+        
                 &:hover {
                     color: transparent;
                     -webkit-background-clip: text;
@@ -55,7 +67,7 @@
                     var(--color-core-5) 80%, var(--color-core-1) 100%);
                     background-size: 180%;
                     transition: 0.4s all ease;
-
+        
                     &:hover::after {
                         content: ']';
                         position: absolute;
@@ -65,7 +77,7 @@
                         font-size: 1em;
                         color: white;
                     }
-
+        
                     &:hover::before {
                         content: '[';
                         position: absolute;
@@ -78,6 +90,7 @@
                 }
             }
         }
+        
     }
 
     @media(max-width: 992px) {
@@ -91,13 +104,14 @@
             justify-content: right;
             align-items: center;
             justify-content: space-between;
-            padding: 1em;
+            padding: 0em 1em;
             min-width: 100%;
+            position: fixed;
+            z-index: 10;
             background-color: var(--black-010);
 
-            img {
-                max-width: 5em;
-                max-height: 5em;
+            h1 {
+                margin: 0;
             }
 
             .container {
@@ -111,18 +125,22 @@
                 justify-content: right;
                 padding-top: 0.5em;
                 padding-bottom: 1em;
-                right: 1em;
+                left: 0;
                 width: 100%;
                 position: absolute;
-                top: 60px;
+                top: 55px;
+                background-color: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(3px);
+                -webkit-backdrop-filter: blur(3px); 
 
                 ul {
-                    padding-top: 0.8em;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: end;
                     gap: 0.2em;
+                    padding-right: 1em;
+                    width: 100%;
         
                     li a {
                         color: var(--white-010);
@@ -184,33 +202,13 @@
                 transition: 0.4s all ease;
                 
                 &:hover {
-                    border: 1px solid var(--color-core-2);
+                    border: 1px solid var(--color-core-4);
                 }
 
                 svg {
                     color: var(--white-010);
                 }
             }
-        }
-
-        
-    }
-
-    @keyframes animate {
-        0% {
-            background-position: 0 0;
-        }
-        25% {
-            background-position: 100% 0;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-        75% {
-            background-position: 0 100%;
-        }
-        100% {
-            background-position: 0 0;
         }
     }
 }

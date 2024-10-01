@@ -36,6 +36,13 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        .what-tec {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
                         h3, span {
                             margin: 0;
                             padding: 0;

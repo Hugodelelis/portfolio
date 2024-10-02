@@ -21,7 +21,7 @@ h2, span {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
-    var(--color-core-5) 80%, var(--color-core-1) 100%);
+    var(--color-core-5) 80%);
     background-size: 180%;
     animation: animate 15s ease infinite;
     font-weight: 300;

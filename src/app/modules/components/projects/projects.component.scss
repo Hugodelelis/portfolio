@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white-010);
 
     #projects {
         min-height: 60vh;
+        margin-bottom: 2em;
         width: 80em;
         padding: 0.8em;
-        scroll-margin-top: 35px;
+        scroll-margin-top: 40px;
 
         h2 {
             text-align: center;
@@ -156,10 +158,6 @@
                 }
 
                 &:nth-child(7) {     
-                    h3 {
-                        margin-bottom: 0.5em;
-                    }  
-
                     &::before {
                         content: "";
                         position: absolute;

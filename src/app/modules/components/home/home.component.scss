@@ -7,7 +7,8 @@
         gap: 1em;
         justify-content: center;
         align-items: center;
-        padding: 0 1em;       
+        padding: 0 1em;  
+        padding-top: 64px; 
 
         .titles {
             display: flex;
@@ -37,8 +38,8 @@
             align-items: center;
             gap: 1em;
             right: 10px;
-            bottom: 10%;
-            top: 8%;
+            bottom: 0%;
+            top: 64px;
             position: absolute;
 
             a {

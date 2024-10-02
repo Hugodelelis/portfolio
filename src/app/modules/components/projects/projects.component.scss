@@ -59,11 +59,12 @@
                         font-weight: 500;
                     }
                 }
+                
                 .modal-body {
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
-                    gap: 0.5em;
+                    gap: 1em;
                     background-color: var(--black-020);
 
                     p {

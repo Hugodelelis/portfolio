@@ -17,16 +17,13 @@ h3 {
 }
 
 h2, span {
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: radial-gradient(circle, var(--color-core-1) 0%, var(--color-core-2) 20%, var(--color-core-3) 40%, var(--color-core-4) 60%, 
-    var(--color-core-5) 80%);
-    background-size: 180%;
-    animation: animate 15s ease infinite;
-    font-weight: 300;
+    color: var(--blacl-010);
     font-size: 1.6em;
     margin-top: 0.8em;
+}
+
+h4 {
+    font-weight: 200;
 }
 
 p {

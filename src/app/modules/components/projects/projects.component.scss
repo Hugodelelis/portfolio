@@ -5,7 +5,7 @@
 
     #projects {
         min-height: 60vh;
-        width: 80em;
+        width: 85em;
         padding: 0.8em;
         scroll-margin-top: 35px;
 
@@ -20,6 +20,7 @@
             gap: 2em;
             margin-top: 2em;
             text-align: center;
+            padding: 0 1em !important;
         
             h3 {
                 &:nth-child(1) {

@@ -1,13 +1,13 @@
 :host {
     footer {
-        padding: 0.5em;
-        margin-top: 0;
+        padding: 1em;
         min-width: 100%;
         z-index: 10;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--white-010);
+        background-color: #0d0d0d;;
     }
 
     span {

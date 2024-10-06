@@ -6,12 +6,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--white-010);
-        background-color: #121212;
+        background-color: var(--black-010);
     }
 
     span {
         font-weight: 500;
         font-size: 1em;
+        color: var(--white-010);
     }
 }
